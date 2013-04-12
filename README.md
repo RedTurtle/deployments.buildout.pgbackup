@@ -13,8 +13,7 @@ ln -s config/base.cfg buildout.cfg
 ./bin/python2.7 bootstrap.py
 ./bin/buildout
 sudo chown -R postgres. .
-sudo su postgres
-sudo cp etc/crontab /etc/cron.d/pgbackup
+sudo cp -i etc/crontab /etc/cron.d/pgbackup
 ```
 
 Requirements
